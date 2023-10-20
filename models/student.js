@@ -8,4 +8,6 @@ const studentSchema = new mongoose.Schema({
     password: { type: String, required: true },
 });
 
-export const Student = mongoose.model('Student', studentSchema);
+const Student = mongoose.model('Student', studentSchema);
+
+module.exports = Student;
