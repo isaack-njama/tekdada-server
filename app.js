@@ -3,7 +3,7 @@ const app = express();
 
 // Routes
 
-const studentRoutes = require('./routes/');
+const studentRoutes = require('./routes/api/studentRoutes');
 app.use('/api', studentRoutes);
 
 const port = process.env.PORT || 3000;
